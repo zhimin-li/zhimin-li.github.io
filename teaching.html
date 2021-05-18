@@ -2,79 +2,97 @@
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="canonical" href="https://zhimin-li.github.io/teaching" />
-<title>Teaching</title>
-</head>
-<body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
+<link rel="icon" href="./bio_pic.png">
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--- <title>Teaching</title> --->
+<title>Zhimin Li</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+<div id="layout">
+<div id="layout-menu-container">
+<div id="layout-menu">
+<div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
 <div class="menu-category">Zhimin Li</div>
 <div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-item"><a href="research.html">Research</a></div>
 <div class="menu-item"><a href="teaching.html" class="current">Teaching</a></div>
 <div class="menu-item"><a href="cnbio.html">中文</a></div>
-</td>
-<td id="layout-content">
+</div> <!-- <div id="layout-menu"> -->
+</div> <!-- <div id="layout-menu-container"> -->
+<div id="layout-content-container">
+<div id="layout-content">
 <div id="toptitle">
 <h1>Teaching</h1>
-<div id="subtitle">&nbsp;&nbsp;&nbsp;
-</div>
+<div id="subtitle">&nbsp;&nbsp;&nbsp;</div>
 </div>
 <h2>Courses</h2>
-<p>Peking University HSBC Business School​ 
-</p>
+<p>Peking University HSBC Business School​ </p>
 <ul>
-<li><p>International Economics (PhD), 2019-
-</p>
+<li><p>International Economics (PhD), 2019-</p>
 </li>
-<li><p>Research Methodology (MA), 2019-
-</p>
+<li><p>Research Methodology (MA), 2019-</p>
 </li>
-<li><p>Advanced Macroeconomics II (MA), 2018-
-</p>
+<li><p>Advanced Macroeconomics II (MA), 2018-</p>
 </li>
-<li><p>Applied Microeconomics (MA), 2018-2020.
-</p>
+<li><p>Applied Microeconomics (MA), 2018-2020.</p>
 </li>
 </ul>
-<p>University of California, Berkeley (Graduate Student Instructor)
-</p>
+<p>University of California, Berkeley (Graduate Student Instructor)</p>
 <ul>
-<li><p>Macroeconomic Theory (undergraduate), 2017-2018.
-</p>
+<li><p>Macroeconomic Theory (undergraduate), 2017-2018.</p>
 </li>
-<li><p>International Trade (undergraduate), 2015-2017
-</p>
+<li><p>International Trade (undergraduate), 2015-2017</p>
 </li>
-<li><p>Development Economics (undergraduate), 2014-2016.
-</p>
+<li><p>Development Economics (undergraduate), 2014-2016.</p>
 </li>
-<li><p>Macroeconomics in the Global Economy (undergraduate), 2014-2015.
-</p>
+<li><p>Macroeconomics in the Global Economy (undergraduate), 2014-2015.</p>
 </li>
 </ul>
-<p>Stanford University Pre-Collegiate Summer Institutes
-</p>
+<p>Stanford University Pre-Collegiate Summer Institutes</p>
 <ul>
-<li><p>Introduction to Economics (Methodist Girls&rsquo; School, Singapore), Summer 2015. 
-</p>
+<li><p>Introduction to Economics (Methodist Girls&rsquo; School, Singapore), Summer 2015. </p>
 </li>
 </ul>
 <h2>Advising</h2>
 <ul>
-<li><p>MA Supervisor
-</p>
+<li><p>MA Supervisor</p>
 </li>
-<li><p>PhD Supervisor
-</p>
+<li><p>PhD Supervisor</p>
 </li>
 </ul>
-</td>
-</tr>
-</table>
+</div> <!-- <div id="layout-content-container"> -->
+</div> <!--- <div id="layout"> --->
+</div> <!--- <div id="main-container"> --->
+<script>
+function openNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "280px";
+        document.getElementById("layout-content-container").style.marginLeft = "280.8px";
+        document.getElementById("layout-content-container").style.position = "fixed";
+    }
+}
+function closeNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "0";
+        document.getElementById("layout-content-container").style.position = "static";
+        document.getElementById("layout-content-container").style.marginLeft = "0px";
+        setInterval(
+            function(){ location.reload() },
+            500
+        );
+    }
+}
+</script>
 </body>
 </html>
