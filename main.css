@@ -136,8 +136,8 @@ a, a > tt {
 }
 
 a:hover, a:hover > tt{
-	/*border-bottom: 1.25px #0366d6 dashed;*/
-	color: #ea4aaa;
+	border-bottom: 1.25px #0366d6 dotted;
+	/*color: #ea4aaa;*/
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
@@ -149,7 +149,7 @@ a:hover, a:hover > tt{
 	text-decoration: none;
 }
 #layout-menu a:hover {
-	color: #ea4aaa;
+	/*color: #ea4aaa;*/
 	text-decoration: none;
 }
 
