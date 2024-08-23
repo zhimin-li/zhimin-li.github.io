@@ -1,12 +1,10 @@
 /* Default css file for jemdoc. */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-	 			 Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-				 Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-				 "Segoe UI Symbol";
+	font-family: "Georgia", "NSimSun";
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 
@@ -82,9 +80,9 @@ div#layout-menu {
 	height: calc(100% - 0px);
 	min-width: 200px;
 	position: fixed;
-	overflow: scroll;
+	overflow: hidden;
 	background: #f6f8fa;
-	border-right: 0.8px solid #e1e4e8;
+	/*border-right: 0.8px solid #e1e4e8;*/
 }
 
 #layout-menu a {
@@ -94,7 +92,7 @@ div#layout-menu {
 
 
 div#layout-content-container {
-	width: calc(100vw - 280.8px);
+	width: calc(100vw - 240px);
 	min-height: calc(100vh - 70px);
 	margin-left: 110.8px;
 	background: none;
@@ -113,7 +111,6 @@ div#layout-content{
 	margin: auto;
 }
 
-
 tt {
 	background: #f3f5f7;
 	color: black;
@@ -131,7 +128,7 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #224b8d;
+	color: #0645AD;
 	text-decoration: none;
 }
 
@@ -193,13 +190,16 @@ em {
 }
 
 strong {
-	font-weight: bold;
+	font-weight: 600;
 }
 
 
 h1, h2, h3 {
+	color: #21618c;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
-	line-height: 1.25;
+	line-height: 1.0;
 	padding-top: 0.5em;
 	border-bottom: 0.7px solid #e1e4e8;
 	font-weight: 400;
