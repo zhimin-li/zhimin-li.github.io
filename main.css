@@ -241,9 +241,10 @@ pre {
 	margin: 0;
 }
 
-
-
 div#footer-container{
+	  border-top: 1px dotted #e0e0e0;
+    padding-top: 10px;
+    margin-top: 40px;
 }
 
 div#footer {
@@ -256,6 +257,10 @@ div#footer {
 	padding-bottom: 25px;
 	padding-left: 35px;
 	padding-right: 35px;
+}
+
+#footer p {
+  text-align: center;
 }
 
 div#footer a {
